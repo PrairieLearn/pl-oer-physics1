@@ -4,10 +4,14 @@ from collections import defaultdict
 
 import pandas as pd
 
+def create_data2():
+    nested_dict = lambda: defaultdict(nested_dict)
+    return nested_dict()
+
 
 def generate(data):
-    data2 = lambda: defaultdict(data2)
 
+    data2 = create_data2()
     # define or load names/items/objects from server files
     names = pd.read_csv(
         "https://raw.githubusercontent.com/open-resources/problem_bank_helpers/main/data/names.csv"
