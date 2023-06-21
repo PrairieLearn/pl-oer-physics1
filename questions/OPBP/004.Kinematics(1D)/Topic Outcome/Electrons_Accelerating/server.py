@@ -2,9 +2,11 @@ import random
 from collections import defaultdict
 
 
-def generate(data):
+nested_dict = lambda: defaultdict(nested_dict)
 
-    data2 = lambda: defaultdict(data2)
+def generate(data):
+    # Start problem code
+    data2 = nested_dict()
 
     data2["params"]["vars"]["units"] = "$m$"
 

@@ -1,20 +1,7 @@
 import random as rd
-from collections import defaultdict
-
 import sympy as sp
 
-
-def create_data2():
-    nested_dict = lambda: defaultdict(nested_dict)
-    return nested_dict()
-
-
 def generate(data):
-    data2 = create_data2()
-
-    # store phrases etc
-    data2["params"]["vars"]["title"] = "Equilibrium Length of a Spring"
-    data2["params"]["vars"]["units"] = "J"
 
     # define the variable x
     x = sp.Symbol("x")
@@ -32,7 +19,7 @@ def generate(data):
     str_Ux = "$" + str(Ux).replace("**", "^") + "$"
 
     # store the expression in the dictionary "params"
-    data2["params"]["Ux"] = str_Ux.replace("*", "")
+    data["params"]["Ux"] = str_Ux.replace("*", "")
 
     # Find the force.  F = - (dU/dx)
     F = (-1) * sp.diff(Ux)
@@ -41,8 +28,4 @@ def generate(data):
     ans = sp.solve(F, x)
 
     # define correct answers
-    # answer type: float
-    data2["correct_answers"]["part1_ans"] = float(ans.pop(0))
-
-    # Update the data object with a new dict
-    data.update(data2)
+    data["correct_answers"]["part1_ans"] = float(ans.pop(0))

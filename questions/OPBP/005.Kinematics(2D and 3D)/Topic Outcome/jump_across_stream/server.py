@@ -1,13 +1,14 @@
 import random as rd
 from collections import defaultdict
-
-import pandas
 import prairielearn as pl
 import sympy as sp
 
 
+nested_dict = lambda: defaultdict(nested_dict)
+
 def generate(data):
-    data2 = create_data2()
+    # Start problem code
+    data2 = nested_dict()
 
     # store phrases etc
     data2["params"]["vars"]["title"] = "Jump Across Stream"
@@ -142,9 +143,3 @@ def generate(data):
 
     # Update the data object with a new dict
     data.update(data2)
-
-
-def create_data2():
-
-    nested_dict = lambda: defaultdict(nested_dict)
-    return nested_dict()

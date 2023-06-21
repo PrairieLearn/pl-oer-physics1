@@ -12,7 +12,6 @@ def generate(data):
     data2 = create_data2()
 
     # store phrases etc
-    data2["params"]["vars"]["title"] = "Physics of Roller-Coasters"
     data2["params"]["vars"]["units"] = "m/s"
 
     # Randomize Variables and round

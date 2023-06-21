@@ -10,10 +10,6 @@ def create_data2():
 def generate(data):
     data2 = create_data2()
 
-    # store phrases etc
-    data2["params"]["vars"]["title"] = "The Energy Expenditure of a Jogger"
-    data2["params"]["vars"]["units"] = "W"
-
     # Randomize Variables
     F = rd.randint(15, 35)
     v = round(rd.uniform(3.0, 8.0), 1)

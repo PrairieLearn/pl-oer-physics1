@@ -1,18 +1,7 @@
 import math
 import random as rd
-from collections import defaultdict
-
-
-def create_data2():
-    nested_dict = lambda: defaultdict(nested_dict)
-    return nested_dict()
-
 
 def generate(data):
-    data2 = create_data2()
-
-    # store phrases etc
-    data2["params"]["vars"]["title"] = "Perfectly Inelastic Collision"
 
     # define bounds of the variables
     v1 = rd.randint(1, 3)
@@ -23,8 +12,8 @@ def generate(data):
         v2 = rd.randint(1, 3)
 
     # store the variables in the dictionary "params"
-    data2["params"]["v1"] = v1
-    data2["params"]["v2"] = v2
+    data["params"]["v1"] = v1
+    data["params"]["v2"] = v2
 
     # find the angle using conservation of momentum and solving for theta by division
     # atan(p_y/p_x)
@@ -40,12 +29,10 @@ def generate(data):
     ## Part 1
 
     # define correct answers
-    data2["correct_answers"]["part1_ans"] = mag
+    data["correct_answers"]["part1_ans"] = mag
 
     ## Part 2
 
     # define correct answers
-    data2["correct_answers"]["part2_ans"] = angle
+    data["correct_answers"]["part2_ans"] = angle
 
-    # Update the data object with a new dict
-    data.update(data2)
