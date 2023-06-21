@@ -1,32 +1,27 @@
 {
-    "uuid": "75c58c54-d74e-4885-a276-ab8f78dc977b",
+    "uuid": "29760b11-beb1-4507-bb0a-a15bc8eaf091",
     "name": "OER 101",
     "title": "Physics: Mechanics",
-    "assessmentSets": [
-        {
-            "abbreviation": "G",
-            "name": "Gallery",
-            "heading": "Gallery of questions using different PrairieLearn elements",
-            "color": "orange1",
-            "description": "Gallery of PL questions"
-        }
-    ],
     "options": {
         "useNewQuestionRenderer": true
     },
+    "assessmentSets": [],
+    "assessmentModules": [],
     "topics": [
-        {
-            "name": "Gallery",
-            "color": "orange1",
-            "description": "Gallery of PL questions"
-        }
+        {"name": "Forces",              "color": "red1", "description": " "},
+        {"name": "Kinematics",          "color": "red2", "description": " "},
+        {"name": "Kinematics2D",        "color": "red3", "description": " "},
+        {"name": "Energy",              "color": "orange1", "description": " "},
+        {"name": "Work",                "color": "orange2", "description": " "},
+        {"name": "Impulse/Momentum",    "color": "orange3", "description": " "},
+        {"name": "Rotational Motion",   "color": "brown1", "description": " "}
     ],
-    "tags": [
-        {
-            "name": "mariana@prairielearn.com",
-            "color": "gray1",
-            "description": "Author of the original question"
-        }
-    ],
-    "timezone": "America/Chicago"
+    "tags": [  
+        {"name": "calculation", "color": "blue2", "description": "numerical input is expected resulting from calculations"},
+        {"name": "mc", "color": "green1", "description": "multiple-choice question"},
+        {"name": "dropdown", "color": "green2", "description": "dropdown menu question"},
+        {"name": "not-randomized", "color": "purple1", "description": "question without randomization"},
+        {"name": "author:prairielearn.com", "color": "blue3", "description": "questions created by prairielearn team"},
+        {"name": "license:CC-BY-NC", "color": "yellow3", "description": "license for all prairielearn.com questions"}
+    ]
 }
