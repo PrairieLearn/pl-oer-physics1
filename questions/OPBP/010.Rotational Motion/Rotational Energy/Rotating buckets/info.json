@@ -6,5 +6,6 @@
     "license:CC-BY-NC",
     "author:firas.moosvi@ubc.ca"
   ],
-  "type": "v3"
+  "type": "v3",
+  "sharedPublicly": true
 }

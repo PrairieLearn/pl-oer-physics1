@@ -7,5 +7,6 @@
     "author:firas.moosvi@ubc.ca",
     "mc"
   ],
-  "type": "v3"
+  "type": "v3",
+  "sharedPublicly": true
 }
