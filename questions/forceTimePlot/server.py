@@ -17,7 +17,7 @@ def generate(data):
         v2 = random.choice([60, 80, 100, 120])
     v3 = 0
     # decide where the two mid-point are located
-    mid = random.sample(set([1, 2, 3]), 2)
+    mid = random.sample([1, 2, 3], 2)
     mid.sort()
     # Computing the slopes
     s1 = (ratiox / ratioy) * (v1 - v0) / (mid[0] * T)
