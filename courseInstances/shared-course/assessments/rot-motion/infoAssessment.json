@@ -18,5 +18,7 @@
         { "id": "OPBP/010.Rotational Motion/Topic Outcome/rock_on_string", "autoPoints": 1 }
       ]
     }
-  ]
+  ],
+  "tools": { "calculator": { "enabled": true } },
+  "shareSourcePublicly": true
 }
