@@ -4,7 +4,7 @@
   "title": "Energy and Work",
   "set": "Homework",
   "number": "4",
-  "accessControl": [],
+  "accessControl": [{ "dateControl": { "release": { "date": "2026-06-18T00:00:01" } } }],
   "zones": [
     {
       "questions": [
