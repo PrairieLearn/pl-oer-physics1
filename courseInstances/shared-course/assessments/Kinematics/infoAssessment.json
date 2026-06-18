@@ -7,6 +7,7 @@
   "accessControl": [{ "dateControl": { "release": { "date": "2026-06-18T00:00:01" } } }],
   "zones": [
     {
+      "title": "1D kinematics",
       "questions": [
         { "id": "OPBP/004.Kinematics(1D)/Free Fall/Mount Etna", "autoPoints": 1 },
         { "id": "accelerationplot", "autoPoints": 1 },
