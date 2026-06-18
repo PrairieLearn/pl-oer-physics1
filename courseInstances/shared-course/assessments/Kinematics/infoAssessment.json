@@ -36,5 +36,6 @@
         { "id": "objectVelocityAngleDependency", "autoPoints": 1 }
       ]
     }
-  ]
+  ],
+  "tools": { "calculator": { "enabled": true } }
 }
