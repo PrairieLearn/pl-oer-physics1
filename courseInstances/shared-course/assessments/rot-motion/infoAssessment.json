@@ -4,7 +4,7 @@
   "title": "Rotational Motion",
   "set": "Homework",
   "number": "5",
-  "accessControl": [],
+  "accessControl": [{ "dateControl": { "release": { "date": "2026-06-18T00:00:01" } } }],
   "zones": [
     {
       "questions": [
