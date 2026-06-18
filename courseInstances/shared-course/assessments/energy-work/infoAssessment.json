@@ -5,5 +5,27 @@
   "set": "Homework",
   "number": "4",
   "accessControl": [],
-  "zones": []
+  "zones": [
+    {
+      "questions": [
+        {
+          "id": "OPBP/008.Energy/Conservation of Energy/Physics of Roller Coasters",
+          "autoPoints": 1
+        },
+        {
+          "id": "OPBP/008.Energy/Kinetic Energy/Kinetic Energy of a Simple Pendulum System",
+          "autoPoints": 1
+        },
+        { "id": "OPBP/008.Energy/Potential Energy/Collision of cart with spring", "autoPoints": 1 },
+        {
+          "id": "OPBP/008.Energy/Potential Energy/Equilibrium Length of a Spring",
+          "autoPoints": 1
+        },
+        { "id": "rampCarStopEnd", "autoPoints": 1 },
+        { "id": "springGivenExpression", "autoPoints": 1 },
+        { "id": "OPBP/009.Work/Power/Energy Expenditure", "autoPoints": 1 },
+        { "id": "OPBP/009.Work/Power/Power of a Sprinter", "autoPoints": 1 }
+      ]
+    }
+  ]
 }
