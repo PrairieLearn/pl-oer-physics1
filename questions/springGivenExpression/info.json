@@ -3,9 +3,11 @@
     "title": "Spring and Work",
     "topic": "Energy",
     "tags": [
-        "author:prairielearn.com", "license:CC-BY-NC",
+        "author:prairielearn.com",
+        "license:CC-BY-NC",
         "sp23",
         "calculation"
     ],
-    "type": "v3"
+    "type": "v3",
+    "shareSourcePublicly": true
 }

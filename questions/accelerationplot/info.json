@@ -4,6 +4,11 @@
     "topic": "Kinematics",
     "type": "v3",
     "tags": [
-        "author:prairielearn.com", "license:CC-BY-NC", "sp23", "graph", "calculation"
-    ]
+        "author:prairielearn.com",
+        "license:CC-BY-NC",
+        "sp23",
+        "graph",
+        "calculation"
+    ],
+    "shareSourcePublicly": true
 }

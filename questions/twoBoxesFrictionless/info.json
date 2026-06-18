@@ -4,6 +4,10 @@
     "topic": "Forces",
     "type": "v3",
     "tags": [
-        "author:prairielearn.com", "license:CC-BY-NC", "symbolic", "sp23"
-    ]
+        "author:prairielearn.com",
+        "license:CC-BY-NC",
+        "symbolic",
+        "sp23"
+    ],
+    "shareSourcePublicly": true
 }

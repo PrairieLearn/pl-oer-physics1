@@ -4,6 +4,11 @@
     "topic": "Forces",
     "type": "v3",
     "tags": [
-        "author:prairielearn.com", "license:CC-BY-NC", "graph", "calculation", "sp23"
-    ]
+        "author:prairielearn.com",
+        "license:CC-BY-NC",
+        "graph",
+        "calculation",
+        "sp23"
+    ],
+    "shareSourcePublicly": true
 }
