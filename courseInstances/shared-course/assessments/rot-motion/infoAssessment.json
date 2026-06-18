@@ -5,5 +5,18 @@
   "set": "Homework",
   "number": "5",
   "accessControl": [],
-  "zones": []
+  "zones": [
+    {
+      "questions": [
+        {
+          "id": "OPBP/010.Rotational Motion/Relating Rotational to Translational Motion/Stewie Swinging a Rock",
+          "autoPoints": 1
+        },
+        { "id": "OPBP/010.Rotational Motion/Rotational Energy/Rotating buckets", "autoPoints": 1 },
+        { "id": "OPBP/010.Rotational Motion/Topic Outcome/angular_speed", "autoPoints": 1 },
+        { "id": "OPBP/010.Rotational Motion/Topic Outcome/Cars on Hills", "autoPoints": 1 },
+        { "id": "OPBP/010.Rotational Motion/Topic Outcome/rock_on_string", "autoPoints": 1 }
+      ]
+    }
+  ]
 }
