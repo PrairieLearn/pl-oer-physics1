@@ -5,5 +5,23 @@
   "set": "Homework",
   "number": "3",
   "accessControl": [],
-  "zones": []
+  "zones": [
+    {
+      "questions": [
+        { "id": "ballCollisionElastic", "autoPoints": 1 },
+        { "id": "ballCollisionInelastic", "autoPoints": 1 },
+        { "id": "billiardElasticCollision", "autoPoints": 1 },
+        { "id": "forceTimePlot", "autoPoints": 1 },
+        {
+          "id": "OPBP/007.Momentum and Impulse/2D Collisions/Perfectly Inelastic Collision",
+          "autoPoints": 1
+        },
+        { "id": "OPBP/007.Momentum and Impulse/Momentum/Rock_Powered_Rocket", "autoPoints": 1 },
+        { "id": "OPBP/007.Momentum and Impulse/Topic Outcome/A flying arrow", "autoPoints": 1 },
+        { "id": "pendulumElasticCollision", "autoPoints": 1 },
+        { "id": "pendulumInelasticCollision", "autoPoints": 1 },
+        { "id": "pendulumPerfectlyInelasticCollision", "autoPoints": 1 }
+      ]
+    }
+  ]
 }
