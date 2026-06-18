@@ -5,5 +5,24 @@
   "set": "Homework",
   "number": "2",
   "accessControl": [],
-  "zones": []
+  "zones": [
+    {
+      "questions": [
+        { "id": "hangingObjectCable", "autoPoints": 1 },
+        { "id": "OPBP/006.Force/Free Body Diagrams/Car in Ditch", "autoPoints": 1 },
+        { "id": "OPBP/006.Force/Friction/Block on a Wall", "autoPoints": 1 },
+        { "id": "OPBP/006.Force/Friction/spring_on_ramp", "autoPoints": 1 },
+        { "id": "OPBP/006.Force/Newton's Second Law/Force_On_An_Object", "autoPoints": 1 },
+        { "id": "OPBP/006.Force/Topic Outcome/Frictionless Air Track", "autoPoints": 1 },
+        {
+          "id": "OPBP/006.Force/Topic Outcome/The max acceleration without slipping",
+          "autoPoints": 1
+        },
+        { "id": "pulleyHorizontalPlane", "autoPoints": 1 },
+        { "id": "pulleyInclinedPlane", "autoPoints": 1 },
+        { "id": "pulleyInclinedPlaneFriction", "autoPoints": 1 },
+        { "id": "twoBoxesFrictionless", "autoPoints": 1 }
+      ]
+    }
+  ]
 }
