@@ -4,7 +4,7 @@
   "title": "Impulse and Moment",
   "set": "Homework",
   "number": "3",
-  "accessControl": [],
+  "accessControl": [{ "dateControl": { "release": { "date": "2026-06-18T00:00:01" } } }],
   "zones": [
     {
       "questions": [
