@@ -27,5 +27,7 @@
         { "id": "OPBP/009.Work/Power/Power of a Sprinter", "autoPoints": 1 }
       ]
     }
-  ]
+  ],
+  "tools": { "calculator": { "enabled": true } },
+  "shareSourcePublicly": true
 }
