@@ -24,5 +24,7 @@
         { "id": "twoBoxesFrictionless", "autoPoints": 1 }
       ]
     }
-  ]
+  ],
+  "tools": { "calculator": { "enabled": true } },
+  "shareSourcePublicly": true
 }
