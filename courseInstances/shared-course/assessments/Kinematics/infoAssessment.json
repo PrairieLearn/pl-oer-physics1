@@ -27,6 +27,14 @@
         { "id": "velocityplot", "autoPoints": 1 },
         { "id": "velocityplot_slopeconcept", "autoPoints": 1 }
       ]
+    },
+    {
+      "title": "2D kinematics",
+      "questions": [
+        { "id": "kinematics2dCannonBall", "autoPoints": 1 },
+        { "id": "kinematics2dCarOffTable", "autoPoints": 1 },
+        { "id": "objectVelocityAngleDependency", "autoPoints": 1 }
+      ]
     }
   ]
 }
