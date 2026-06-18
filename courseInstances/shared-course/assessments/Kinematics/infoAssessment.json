@@ -5,5 +5,27 @@
   "set": "Homework",
   "number": "1",
   "accessControl": [],
-  "zones": []
+  "zones": [
+    {
+      "questions": [
+        { "id": "OPBP/004.Kinematics(1D)/Free Fall/Mount Etna", "autoPoints": 1 },
+        { "id": "accelerationplot", "autoPoints": 1 },
+        { "id": "ballDrop", "autoPoints": 1 },
+        { "id": "kinematicsDroptower", "autoPoints": 1 },
+        { "id": "OPBP/004.Kinematics(1D)/Topic Outcome/Electrons_Accelerating", "autoPoints": 1 },
+        { "id": "OPBP/004.Kinematics(1D)/Topic Outcome/Throwing Stones", "autoPoints": 1 },
+        {
+          "id": "OPBP/005.Kinematics(2D and 3D)/Topic Outcome/Distance_Between_Two_People",
+          "autoPoints": 1
+        },
+        {
+          "id": "OPBP/005.Kinematics(2D and 3D)/Topic Outcome/jump_across_stream",
+          "autoPoints": 1
+        },
+        { "id": "OPBP/005.Kinematics(2D and 3D)/Topic Outcome/Rocket", "autoPoints": 1 },
+        { "id": "velocityplot", "autoPoints": 1 },
+        { "id": "velocityplot_slopeconcept", "autoPoints": 1 }
+      ]
+    }
+  ]
 }
