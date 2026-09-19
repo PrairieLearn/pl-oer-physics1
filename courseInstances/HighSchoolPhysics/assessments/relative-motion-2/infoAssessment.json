@@ -1,0 +1,22 @@
+{
+  "uuid": "a7b5e3d1-7e61-4cb9-9b62-3bd7e8d10a02",
+  "type": "Exam",
+  "title": "Relative Motion Practice Test 2",
+  "set": "Practice Exam",
+  "number": "2",
+  "multipleInstance": true,
+  "shuffleQuestions": true,
+  "accessControl": [{ "dateControl": { "release": { "date": "2026-09-18T00:00:01" } } }],
+  "zones": [
+    { "title": "River crossing time", "questions": [{ "id": "relativeMotion/riverCrossingTime", "autoPoints": [5,4,3,2,1] }] },
+    { "title": "Resultant velocity components", "questions": [{ "id": "relativeMotion/boatVectorSpeed", "autoPoints": [5,4,3,2,1] }] },
+    { "title": "Ball thrown backward", "questions": [{ "id": "relativeMotion/trainBackward", "autoPoints": [5,4,3,2,1] }] },
+    { "title": "Standing on a moving sidewalk", "questions": [{ "id": "relativeMotion/sidewalkStanding", "autoPoints": [5,4,3,2,1] }] },
+    { "title": "Correcting for wind", "questions": [{ "id": "relativeMotion/windDirection", "autoPoints": [5,4,3,2,1] }] },
+    { "title": "Ball thrown from a car", "questions": [{ "id": "relativeMotion/carBall", "autoPoints": [5,4,3,2,1] }] },
+    { "title": "Angled parade float motion", "questions": [{ "id": "relativeMotion/angledFloat", "autoPoints": [5,4,3,2,1] }] },
+    { "title": "Swimmer in a current", "questions": [{ "id": "relativeMotion/angledSwimmer", "autoPoints": [5,4,3,2,1] }] },
+    { "title": "Runner on a conveyor", "questions": [{ "id": "relativeMotion/conveyorRunner", "autoPoints": [5,4,3,2,1] }] }
+  ],
+  "tools": { "calculator": { "enabled": true } }
+}

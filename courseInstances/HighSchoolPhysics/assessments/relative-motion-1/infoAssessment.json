@@ -1,0 +1,22 @@
+{
+  "uuid": "a7b5e3d1-7e61-4cb9-9b62-3bd7e8d10a01",
+  "type": "Exam",
+  "title": "Relative Motion Practice Test 1",
+  "set": "Practice Exam",
+  "number": "1",
+  "multipleInstance": true,
+  "shuffleQuestions": true,
+  "accessControl": [{ "dateControl": { "release": { "date": "2026-09-18T00:00:01" } } }],
+  "zones": [
+    { "title": "Relative velocity fundamentals", "questions": [{ "id": "relativeMotion/riverSpeed", "autoPoints": [5,4,3,2,1] }] },
+    { "title": "Boat and river components", "questions": [{ "id": "relativeMotion/boatDownstream", "autoPoints": [5,4,3,2,1] }] },
+    { "title": "Boat heading", "questions": [{ "id": "relativeMotion/boatAngle", "autoPoints": [5,4,3,2,1] }] },
+    { "title": "Moving sidewalks", "questions": [{ "id": "relativeMotion/movingSidewalk", "autoPoints": [5,4,3,2,1] }] },
+    { "title": "Train and ball", "questions": [{ "id": "relativeMotion/trainBall", "autoPoints": [5,4,3,2,1] }] },
+    { "title": "Two-dimensional relative velocity", "questions": [{ "id": "relativeMotion/helicopter", "autoPoints": [5,4,3,2,1] }] },
+    { "title": "Angled throw from a moving car", "questions": [{ "id": "relativeMotion/angledBallCar", "autoPoints": [5,4,3,2,1] }] },
+    { "title": "Rubber band and moving observer", "questions": [{ "id": "relativeMotion/rubberBand", "autoPoints": [5,4,3,2,1] }] },
+    { "title": "Crosswind drone", "questions": [{ "id": "relativeMotion/droneWind", "autoPoints": [5,4,3,2,1] }] }
+  ],
+  "tools": { "calculator": { "enabled": true } }
+}

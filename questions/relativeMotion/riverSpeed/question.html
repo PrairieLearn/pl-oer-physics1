@@ -1,0 +1,6 @@
+<pl-question-panel>
+  <p>A river flows east and is {{params.across}} m wide. Your boat can move at {{params.boat}} m/s relative to the water.</p>
+  <p>You steer the boat somewhat upstream so that the river current is canceled. As a result, your path relative to the shore is straight north, and you land directly across from your launch point. The crossing takes {{params.t}} s.</p>
+  <p>What is the river current's speed?</p>
+</pl-question-panel>
+<pl-multiple-choice answers-name="ans"><pl-answer correct="true">{{params.correct}} m/s</pl-answer><pl-answer correct="false">{{params.a}} m/s</pl-answer><pl-answer correct="false">{{params.b}} m/s</pl-answer><pl-answer correct="false">{{params.c}} m/s</pl-answer></pl-multiple-choice>
