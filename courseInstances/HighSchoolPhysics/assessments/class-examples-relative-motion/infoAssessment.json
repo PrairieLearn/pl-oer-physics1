@@ -1,0 +1,19 @@
+{
+  "uuid": "b8c6f4e2-8a72-4db0-a573-4ce9d6f20a01",
+  "type": "Exam",
+  "title": "Relative Motion: Class-Example Challenge Test",
+  "set": "Practice Exam",
+  "number": "3",
+  "multipleInstance": true,
+  "shuffleQuestions": true,
+  "accessControl": [{ "dateControl": { "release": { "date": "2026-09-20T00:00:01" } } }],
+  "zones": [
+    { "title": "River drift", "questions": [{ "id": "relativeMotion/riverDrift", "autoPoints": [5,4,3] }] },
+    { "title": "River heading and time", "questions": [{ "id": "relativeMotion/riverAimTime", "autoPoints": [5,4,3] }] },
+    { "title": "Escalator reference frames", "questions": [{ "id": "relativeMotion/escalatorWalk", "autoPoints": [5,4,3] }] },
+    { "title": "Three observers", "questions": [{ "id": "relativeMotion/threeObservers", "autoPoints": [5,4,3] }] },
+    { "title": "Angled relative velocity", "questions": [{ "id": "relativeMotion/angledThrowGround", "autoPoints": [5,4,3] }] },
+    { "title": "Wind compensation", "questions": [{ "id": "relativeMotion/windCompensation", "autoPoints": [5,4,3] }] }
+  ],
+  "tools": { "calculator": { "enabled": true } }
+}
