@@ -6,14 +6,37 @@
   "number": "3",
   "multipleInstance": true,
   "shuffleQuestions": true,
-  "accessControl": [{ "dateControl": { "release": { "date": "2026-09-20T00:00:01" } } }],
+  "accessControl": [
+    {
+      "dateControl": { "release": { "date": "2026-09-20T00:00:01" } },
+      "afterComplete": { "questions": { "hidden": false } }
+    }
+  ],
   "zones": [
-    { "title": "River drift", "questions": [{ "id": "relativeMotion/riverDrift", "autoPoints": [5,4,3] }] },
-    { "title": "River heading and time", "questions": [{ "id": "relativeMotion/riverAimTime", "autoPoints": [5,4,3] }] },
-    { "title": "Escalator reference frames", "questions": [{ "id": "relativeMotion/escalatorWalk", "autoPoints": [5,4,3] }] },
-    { "title": "Three observers", "questions": [{ "id": "relativeMotion/threeObservers", "autoPoints": [5,4,3] }] },
-    { "title": "Angled relative velocity", "questions": [{ "id": "relativeMotion/angledThrowGround", "autoPoints": [5,4,3] }] },
-    { "title": "Wind compensation", "questions": [{ "id": "relativeMotion/windCompensation", "autoPoints": [5,4,3] }] }
+    {
+      "title": "River drift",
+      "questions": [{ "id": "relativeMotion/riverDrift", "autoPoints": [5, 4, 3] }]
+    },
+    {
+      "title": "River heading and time",
+      "questions": [{ "id": "relativeMotion/riverAimTime", "autoPoints": [5, 4, 3] }]
+    },
+    {
+      "title": "Escalator reference frames",
+      "questions": [{ "id": "relativeMotion/escalatorWalk", "autoPoints": [5, 4, 3] }]
+    },
+    {
+      "title": "Three observers",
+      "questions": [{ "id": "relativeMotion/threeObservers", "autoPoints": [5, 4, 3] }]
+    },
+    {
+      "title": "Angled relative velocity",
+      "questions": [{ "id": "relativeMotion/angledThrowGround", "autoPoints": [5, 4, 3] }]
+    },
+    {
+      "title": "Wind compensation",
+      "questions": [{ "id": "relativeMotion/windCompensation", "autoPoints": [5, 4, 3] }]
+    }
   ],
   "tools": { "calculator": { "enabled": true } }
 }
