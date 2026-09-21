@@ -6,17 +6,49 @@
   "number": "2",
   "multipleInstance": true,
   "shuffleQuestions": true,
-  "accessControl": [{ "dateControl": { "release": { "date": "2026-09-18T00:00:01" } } }],
+  "accessControl": [
+    {
+      "dateControl": { "release": { "date": "2026-09-18T00:00:01" } },
+      "afterComplete": { "questions": { "hidden": false } }
+    }
+  ],
   "zones": [
-    { "title": "River crossing time", "questions": [{ "id": "relativeMotion/riverCrossingTime", "autoPoints": [5,4,3,2,1] }] },
-    { "title": "Resultant velocity components", "questions": [{ "id": "relativeMotion/boatVectorSpeed", "autoPoints": [5,4,3,2,1] }] },
-    { "title": "Ball thrown backward", "questions": [{ "id": "relativeMotion/trainBackward", "autoPoints": [5,4,3,2,1] }] },
-    { "title": "Standing on a moving sidewalk", "questions": [{ "id": "relativeMotion/sidewalkStanding", "autoPoints": [5,4,3,2,1] }] },
-    { "title": "Correcting for wind", "questions": [{ "id": "relativeMotion/windDirection", "autoPoints": [5,4,3,2,1] }] },
-    { "title": "Ball thrown from a car", "questions": [{ "id": "relativeMotion/carBall", "autoPoints": [5,4,3,2,1] }] },
-    { "title": "Angled parade float motion", "questions": [{ "id": "relativeMotion/angledFloat", "autoPoints": [5,4,3,2,1] }] },
-    { "title": "Swimmer in a current", "questions": [{ "id": "relativeMotion/angledSwimmer", "autoPoints": [5,4,3,2,1] }] },
-    { "title": "Runner on a conveyor", "questions": [{ "id": "relativeMotion/conveyorRunner", "autoPoints": [5,4,3,2,1] }] }
+    {
+      "title": "River crossing time",
+      "questions": [{ "id": "relativeMotion/riverCrossingTime", "autoPoints": [5, 4, 3, 2, 1] }]
+    },
+    {
+      "title": "Resultant velocity components",
+      "questions": [{ "id": "relativeMotion/boatVectorSpeed", "autoPoints": [5, 4, 3, 2, 1] }]
+    },
+    {
+      "title": "Ball thrown backward",
+      "questions": [{ "id": "relativeMotion/trainBackward", "autoPoints": [5, 4, 3, 2, 1] }]
+    },
+    {
+      "title": "Standing on a moving sidewalk",
+      "questions": [{ "id": "relativeMotion/sidewalkStanding", "autoPoints": [5, 4, 3, 2, 1] }]
+    },
+    {
+      "title": "Correcting for wind",
+      "questions": [{ "id": "relativeMotion/windDirection", "autoPoints": [5, 4, 3, 2, 1] }]
+    },
+    {
+      "title": "Ball thrown from a car",
+      "questions": [{ "id": "relativeMotion/carBall", "autoPoints": [5, 4, 3, 2, 1] }]
+    },
+    {
+      "title": "Angled parade float motion",
+      "questions": [{ "id": "relativeMotion/angledFloat", "autoPoints": [5, 4, 3, 2, 1] }]
+    },
+    {
+      "title": "Swimmer in a current",
+      "questions": [{ "id": "relativeMotion/angledSwimmer", "autoPoints": [5, 4, 3, 2, 1] }]
+    },
+    {
+      "title": "Runner on a conveyor",
+      "questions": [{ "id": "relativeMotion/conveyorRunner", "autoPoints": [5, 4, 3, 2, 1] }]
+    }
   ],
   "tools": { "calculator": { "enabled": true } }
 }
