@@ -1,0 +1,39 @@
+<pl-question-panel>
+  <p>A museum walkway is {{params.length}} m long.</p>
+
+  <p>
+    When you stand still, the walkway carries you from one end to the other in
+    {{params.stand_time}} s. When you walk forward on the moving walkway, you
+    cover the same distance in {{params.walk_time}} s.
+  </p>
+
+  <p>
+    Use these two observations to determine the walkway's speed relative to the
+    floor and your walking speed relative to the walkway. Do not assume that
+    the two speeds are given directly.
+  </p>
+
+  <p>
+    Now imagine the walkway is {{params.length}} m wide instead of long:
+  </p>
+
+  <ol>
+    <li>
+      If you walk straight across the walkway, what angle does your path over
+      the floor make with the walkway's direction of motion?
+    </li>
+    <li>
+      If you want your path over the floor to be exactly straight across, what
+      angle should you aim relative to the perpendicular direction?
+    </li>
+  </ol>
+
+  <p>Which pair of angles is correct?</p>
+</pl-question-panel>
+
+<pl-multiple-choice answers-name="ans">
+  <pl-answer correct="true">{{params.path_angle}}°; {{params.direct_angle}}°</pl-answer>
+  <pl-answer correct="false">{{params.wrong_path}}°; {{params.direct_angle}}°</pl-answer>
+  <pl-answer correct="false">{{params.path_angle}}°; {{params.wrong_direct}}°</pl-answer>
+  <pl-answer correct="false">{{params.wrong_path}}°; {{params.wrong_direct}}°</pl-answer>
+</pl-multiple-choice>
