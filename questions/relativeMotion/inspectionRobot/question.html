@@ -1,0 +1,137 @@
+<pl-question-panel>
+  <p>
+    A small inspection robot drives on a wide conveyor belt that moves east.
+    A camera attached to the factory ceiling records these two trials:
+  </p>
+  <ul>
+    <li>
+      When the robot drives toward the belt's eastern end, the camera measures
+      its speed as <strong>{{params.east_trial}} m/s east</strong>.
+    </li>
+    <li>
+      When the robot reverses and drives toward the western end, the camera
+      measures its speed as <strong>{{params.west_trial}} m/s west</strong>.
+    </li>
+  </ul>
+  <p>
+    The belt runs at a constant speed. The robot maintains the same speed
+    relative to the belt in every direction. Consider only the steady motion
+    during each trial, after any turn is complete.
+  </p>
+  <p>
+    Round speeds to the nearest 0.01 m/s and angles to the nearest 0.1&deg;.
+    Keep unrounded values during calculations.
+  </p>
+
+  <h3>1. Determine the two speeds</h3>
+  <p>
+    What are the robot's speed relative to the belt and the belt's speed
+    relative to the factory floor, respectively?
+  </p>
+</pl-question-panel>
+<pl-multiple-choice answers-name="speeds" weight="1">
+  <pl-answer correct="true">
+    Robot: {{params.robot_speed}} m/s; belt: {{params.belt_speed}} m/s
+  </pl-answer>
+  <pl-answer correct="false">
+    Robot: {{params.east_trial}} m/s; belt: {{params.west_trial}} m/s
+  </pl-answer>
+  <pl-answer correct="false">
+    Robot: {{params.belt_speed}} m/s; belt: {{params.robot_speed}} m/s
+  </pl-answer>
+  <pl-answer correct="false">
+    Robot: {{params.twice_robot_speed}} m/s; belt: {{params.twice_belt_speed}} m/s
+  </pl-answer>
+</pl-multiple-choice>
+
+<pl-question-panel>
+  <h3>2. Follow the line on the floor</h3>
+  <p>
+    A red line painted on the factory floor runs north&ndash;south. The operator
+    wants the camera to show the robot moving north along this line, with no
+    eastward or westward motion. Which direction should the robot point, and
+    what speed will the camera measure?
+  </p>
+  <p>
+    Angles below are measured starting from north and turning toward the
+    indicated direction.
+  </p>
+</pl-question-panel>
+<pl-multiple-choice answers-name="follow_line" weight="1">
+  <pl-answer correct="true">
+    Aim {{params.compensation_angle}}&deg; toward west; camera measures {{params.north_speed}} m/s
+  </pl-answer>
+  <pl-answer correct="false">
+    Aim {{params.compensation_angle}}&deg; toward east; camera measures {{params.north_speed}} m/s
+  </pl-answer>
+  <pl-answer correct="false">
+    Aim {{params.observed_angle}}&deg; toward west; camera measures {{params.robot_speed}} m/s
+  </pl-answer>
+  <pl-answer correct="false">
+    Aim {{params.complement_angle}}&deg; toward west; camera measures {{params.north_speed}} m/s
+  </pl-answer>
+</pl-multiple-choice>
+
+<pl-question-panel>
+  <h3>3. Point the robot north</h3>
+  <p>
+    In a separate trial, the operator points the robot exactly north relative
+    to the belt. The robot and belt retain their original speeds. What motion
+    does the ceiling camera now record?
+  </p>
+</pl-question-panel>
+<pl-multiple-choice answers-name="point_north" weight="1">
+  <pl-answer correct="true">
+    {{params.observed_speed}} m/s, directed {{params.observed_angle}}&deg; from north toward east
+  </pl-answer>
+  <pl-answer correct="false">
+    {{params.north_speed}} m/s, directed {{params.compensation_angle}}&deg; from north toward west
+  </pl-answer>
+  <pl-answer correct="false">
+    {{params.robot_speed}} m/s, directed exactly north
+  </pl-answer>
+  <pl-answer correct="false">
+    {{params.scalar_sum}} m/s, directed {{params.observed_angle}}&deg; from north toward east
+  </pl-answer>
+</pl-multiple-choice>
+
+<pl-answer-panel>
+  <h3>Worked solution</h3>
+  <p>
+    Let $u$ be the robot's speed relative to the belt and $b$ the belt's speed
+    relative to the floor. Taking east as positive, the first observation gives
+    $u+b={{params.east_trial}}$. The westward trial gives
+    $-u+b=-{{params.west_trial}}$, or $u-b={{params.west_trial}}$.
+  </p>
+  <p>
+    Adding and subtracting the equations gives
+    \[
+      u=\frac{ {{params.east_trial}}+{{params.west_trial}} }{2}
+        ={{params.robot_speed}}\ \mathrm{m/s},\qquad
+      b=\frac{ {{params.east_trial}}-{{params.west_trial}} }{2}
+        ={{params.belt_speed}}\ \mathrm{m/s}.
+    \]
+  </p>
+  <p>
+    To follow the red line, the robot's westward component must cancel the
+    belt's eastward velocity. For an angle $\alpha$ measured from north toward
+    west, $u\sin\alpha=b$. Thus
+    \[
+      \alpha=\sin^{-1}(b/u)={{params.compensation_angle}}^\circ,
+      \qquad v_{\mathrm{north}}=u\cos\alpha=\sqrt{u^2-b^2}
+        ={{params.north_speed}}\ \mathrm{m/s}.
+    \]
+    This angle describes where the robot points; the camera sees motion
+    exactly north.
+  </p>
+  <p>
+    When the robot instead points north relative to the belt, the camera sees
+    an eastward velocity component $b$ and a northward component $u$:
+    \[
+      v=\sqrt{u^2+b^2}={{params.observed_speed}}\ \mathrm{m/s},
+      \qquad \theta=\tan^{-1}(b/u)={{params.observed_angle}}^\circ.
+    \]
+    The observed path points ${{params.observed_angle}}^\circ$ from north
+    toward east.
+  </p>
+</pl-answer-panel>
