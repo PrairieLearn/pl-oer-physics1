@@ -8,14 +8,39 @@
   "shuffleQuestions": true,
   "accessControl": [{ "dateControl": { "release": { "date": "2026-09-21T00:00:01" } } }],
   "zones": [
-    { "title": "Crossing and reference frames", "questions": [{ "id": "relativeMotion/cartCrossing", "autoPoints": [5,4,3] }] },
-    { "title": "Angled motion", "questions": [{ "id": "relativeMotion/skateboardPackage", "autoPoints": [5,4,3] }] },
-    { "title": "Combined speeds", "questions": [{ "id": "relativeMotion/conveyorPackage", "autoPoints": [5,4,3] }] },
-    { "title": "Moving platforms", "questions": [{ "id": "relativeMotion/floatWalker", "autoPoints": [5,4,3] }] },
-    { "title": "Opposite-direction motion", "questions": [{ "id": "relativeMotion/sledBackThrow", "autoPoints": [5,4,3] }] },
-    { "title": "Two-dimensional launch", "questions": [{ "id": "relativeMotion/rotatingPlatform", "autoPoints": [5,4,3] }] },
-    { "title": "Time and relative speed", "questions": [{ "id": "relativeMotion/museumWalk", "autoPoints": [5,4,3] }] },
-    { "title": "Ground-frame direction", "questions": [{ "id": "relativeMotion/launchCart", "autoPoints": [5,4,3] }] }
+    {
+      "title": "Crossing and reference frames",
+      "questions": [{ "id": "relativeMotion/cartCrossing", "autoPoints": [5, 4, 3] }]
+    },
+    {
+      "title": "Angled motion",
+      "questions": [{ "id": "relativeMotion/skateboardPackage", "autoPoints": [5, 4, 3] }]
+    },
+    {
+      "title": "Combined speeds",
+      "questions": [{ "id": "relativeMotion/conveyorPackage", "autoPoints": [5, 4, 3] }]
+    },
+    {
+      "title": "Moving platforms",
+      "questions": [{ "id": "relativeMotion/floatWalker", "autoPoints": [5, 4, 3] }]
+    },
+    {
+      "title": "Opposite-direction motion",
+      "questions": [{ "id": "relativeMotion/sledBackThrow", "autoPoints": [5, 4, 3] }]
+    },
+    {
+      "title": "Two-dimensional launch",
+      "questions": [{ "id": "relativeMotion/rotatingPlatform", "autoPoints": [5, 4, 3] }]
+    },
+    {
+      "title": "Time and relative speed",
+      "questions": [{ "id": "relativeMotion/museumWalk", "autoPoints": [5, 4, 3] }]
+    },
+    {
+      "title": "Ground-frame direction",
+      "questions": [{ "id": "relativeMotion/launchCart", "autoPoints": [5, 4, 3] }]
+    },
+    { "questions": [{ "id": "relativeMotion/twoConditionWalkway", "autoPoints": 1 }] }
   ],
   "tools": { "calculator": { "enabled": true } }
 }
