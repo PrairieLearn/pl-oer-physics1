@@ -40,7 +40,12 @@
       "title": "Ground-frame direction",
       "questions": [{ "id": "relativeMotion/launchCart", "autoPoints": [5, 4, 3] }]
     },
-    { "questions": [{ "id": "relativeMotion/twoConditionWalkway", "autoPoints": 1 }] }
+    {
+      "questions": [
+        { "id": "relativeMotion/twoConditionWalkway", "autoPoints": 1 },
+        { "id": "relativeMotion/inspectionRobot", "autoPoints": 1 }
+      ]
+    }
   ],
   "tools": { "calculator": { "enabled": true } }
 }
