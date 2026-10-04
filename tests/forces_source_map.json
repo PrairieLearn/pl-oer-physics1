@@ -1,0 +1,180 @@
+{
+  "scope": "Worksheets 10–12 and two Forces class-note pages, supplied 2026-10-04.",
+  "sources": {
+    "IMG_9428.HEIC": "Worksheet 10 conceptual questions",
+    "IMG_9429.HEIC": "Worksheet 10 quantitative questions",
+    "IMG_9430.HEIC": "Worksheet 11",
+    "IMG_9431.HEIC": "Worksheet 12 page 1",
+    "IMG_9432.HEIC": "Worksheet 12 page 2",
+    "IMG_9427 2.HEIC": "Partial duplicate of Worksheet 12; no separate additional topic",
+    "IMG_9433.HEIC": "Class notes: Newton laws, force inventories and third-law pairs",
+    "IMG_9434.HEIC": "Class notes: inertia, turning, gravitational reaction and continued motion"
+  },
+  "boundaries": "No friction-coefficient calculations, inclined planes, torque, pulley constraints, Hooke's law, momentum or work–energy methods are required. Spring force is supplied at one instant. Handwritten answers are reference material, not assumed correct.",
+  "questions": [
+    {
+      "qid": "forcesPractice/brakingShuttle",
+      "exam": 5,
+      "title": "A braking laboratory shuttle",
+      "source": "Worksheet 10: inertia and smooth-floor motion; class notes on accelerating frames and action–reaction",
+      "transfer_task": "Compare two cameras during braking; combine inertia with relative displacement.",
+      "distractor_models": "Transmitting a brake through a frictionless deck; treating normal and weight as a third-law pair."
+    },
+    {
+      "qid": "forcesPractice/robotTraction",
+      "exam": 5,
+      "title": "A delivery robot and its winch",
+      "source": "Worksheet 10 conceptual: car propulsion, internal pulling, jumping; class notes on Earth recoil",
+      "transfer_task": "Distinguish the complete robot from its internal mechanism; identify ground traction.",
+      "distractor_models": "Motor treated as external; cancelling forces on different bodies; self-lifting by internal forces."
+    },
+    {
+      "qid": "forcesPractice/lunarCalibration",
+      "exam": 5,
+      "title": "A balance at a remote outpost",
+      "source": "Worksheet 10: mass versus force-defined weight, Earth/Moon, hovering",
+      "transfer_task": "Decode an Earth-calibrated display in a different gravitational field, then replace the source of support.",
+      "distractor_models": "Display mistaken for mass; Earth g used locally; gravity removed when contact is removed."
+    },
+    {
+      "qid": "forcesPractice/liftAssist",
+      "exam": 5,
+      "title": "An instrument on a workbench",
+      "source": "Worksheet 11: assisted support and loss of contact; Worksheet 12: mass from weight",
+      "transfer_task": "Infer mass from weight, decide contact status in two trials, then use the appropriate force inventory.",
+      "distractor_models": "N always equals mg; negative normal force; applied force mistaken for net force."
+    },
+    {
+      "qid": "forcesPractice/descentScale",
+      "exam": 5,
+      "title": "A camera case on a stopping stage",
+      "source": "Worksheet 11: acceleration and scale readings; Worksheet 12: kg-calibrated scale",
+      "transfer_task": "Infer acceleration from downward stopping motion, predict the display, separate acceleration from velocity.",
+      "distractor_models": "Downward motion assumed to mean downward acceleration; changing scale reading mistaken for changing mass."
+    },
+    {
+      "qid": "forcesPractice/stackedInstruments",
+      "exam": 5,
+      "title": "Two instruments on a descending stage",
+      "source": "Worksheet 11: stacked objects in an accelerating lift",
+      "transfer_task": "Infer downward acceleration from observations and audit all forces on the lower object.",
+      "distractor_models": "Upper contact assumed to equal upper weight; upper mass omitted from floor support."
+    },
+    {
+      "qid": "forcesPractice/cameraLauncher",
+      "exam": 5,
+      "title": "A sensor launch",
+      "source": "Worksheet 10: finite-duration upward force followed by free flight; class inertia notes",
+      "transfer_task": "Switch force models at release and distinguish release-to-apex rise from total rise.",
+      "distractor_models": "Gravity omitted during contact; powered rise counted twice; force or acceleration vanishes at the apex."
+    },
+    {
+      "qid": "forcesPractice/netCatcher",
+      "exam": 5,
+      "title": "A sample container and a catching net",
+      "source": "Worksheet 12: stopping a falling object over a distance; Worksheet 10: upward force smaller than weight",
+      "transfer_task": "Infer acceleration from downward displacement, convert grams, distinguish contact force from net force.",
+      "distractor_models": "Omitted weight; missing factor two; any upward force assumed to slow a falling object."
+    },
+    {
+      "qid": "forcesPractice/corneringCarrier",
+      "exam": 6,
+      "title": "A loose vial on a turning carrier",
+      "source": "Class notes: turning motion, Newton's first law, force pairs and Earth's acceleration",
+      "transfer_task": "Predict motion in the building frame while the support turns; identify both contact and gravitational pairs.",
+      "distractor_models": "Constant speed confused with constant velocity; inertia treated as a force; Earth's force denied."
+    },
+    {
+      "qid": "forcesPractice/springSeparation",
+      "exam": 6,
+      "title": "Two robots separate",
+      "source": "Worksheet 10: internal forces and skating/jumping; class notes: Newton's third law",
+      "transfer_task": "Reason about two individual masses and a combined system without introducing Hooke's law.",
+      "distractor_models": "Equal force assumed to mean equal acceleration; internal forces called external; internal forces assumed unable to move parts."
+    },
+    {
+      "qid": "forcesPractice/counterweightHoist",
+      "exam": 6,
+      "title": "A specimen basket in motion",
+      "source": "Worksheet 12: weight-to-mass and rope-force acceleration",
+      "transfer_task": "Find mass, infer acceleration opposite the initial velocity, then find stopping time.",
+      "distractor_models": "Cable tension used as resultant; treating supported motion as free fall; newtons treated as kilograms."
+    },
+    {
+      "qid": "forcesPractice/sensorCalibration",
+      "exam": 6,
+      "title": "A moving test carriage",
+      "source": "Worksheet 12: scale calibration and inference of acceleration; Worksheet 11: apparent weight",
+      "transfer_task": "Use an at-rest calibration and changed force reading to reconstruct velocity, not merely the reading.",
+      "distractor_models": "Incorrect direction; kilogram display treated as force; display treated as changing true mass."
+    },
+    {
+      "qid": "forcesPractice/coupledModules",
+      "exam": 6,
+      "title": "A powered cart with a trailer",
+      "source": "Worksheet 12: two interacting blocks, inverse external-force problem",
+      "transfer_task": "Infer drive force from a link reading, change one subsystem's mass, predict a new link reading.",
+      "distractor_models": "Link force mistaken for drive force; link force assumed fixed; added mass assigned to wrong subsystem."
+    },
+    {
+      "qid": "forcesPractice/liftStackSensor",
+      "exam": 6,
+      "title": "Two sensors and an unknown module",
+      "source": "Worksheet 11: stacked-object force inventory; Worksheet 12: unknown mass from force and acceleration",
+      "transfer_task": "Use two independent measured contact forces to solve for an unknown mass and a signed acceleration.",
+      "distractor_models": "Assuming equilibrium; flipping acceleration; omitting the upper object's downward contact force."
+    },
+    {
+      "qid": "forcesPractice/opposedDrives",
+      "exam": 6,
+      "title": "A motor and a magnetic brake",
+      "source": "Worksheet 12: opposing drive/brake forces and inferred mass; class notes: constant-velocity motion",
+      "transfer_task": "Infer signed acceleration from stopping time, combine opposing forces, recover mass.",
+      "distractor_models": "Ignoring drive during braking; adding opposing forces; omitting stopping time; motion needs continuing net force."
+    },
+    {
+      "qid": "forcesPractice/launcherDesign",
+      "exam": 6,
+      "title": "An inspection capsule launcher",
+      "source": "Worksheet 10: powered launch then free flight; Worksheet 12: force from stopping distance",
+      "transfer_task": "Work backwards through free flight and powered displacement to infer the applied launch force.",
+      "distractor_models": "Applied force confused with ma; weight alone; powered stroke counted as free-flight rise."
+    },
+    {
+      "qid": "forcesPractice/motionEvidence",
+      "exam": 5,
+      "title": "Reading a motion report",
+      "source": "Worksheet 10 question 2(a): motion and net force; Newton's second law",
+      "transfer_task": "Infer a signed net-force comparison from qualitative motion evidence and unequal masses. Variants change constant/increasing/decreasing speeds, direction, and which mass is larger.",
+      "distractor_models": "Faster motion needs a larger force; equal acceleration implies equal force; force always points with velocity.",
+      "format": "One conceptual multiple-choice part; no numerical calculation."
+    },
+    {
+      "qid": "forcesPractice/collisionEvidence",
+      "exam": 5,
+      "title": "Two cases make contact",
+      "source": "Worksheet 10 question 2(b–c): push/reaction and unequal response",
+      "transfer_task": "Compare a single impact interaction with the acceleration of each case, regardless of which was initially moving.",
+      "distractor_models": "The heavier object exerts more force; equal forces imply equal accelerations; a stationary object cannot exert a force.",
+      "format": "One conceptual multiple-choice part; no numerical calculation."
+    },
+    {
+      "qid": "forcesPractice/gravityLabels",
+      "exam": 6,
+      "title": "Shipments from two outposts",
+      "source": "Worksheet 10 question 2(h–i): equal force-defined weights versus equal mass",
+      "transfer_task": "Use original local-gravity comparisons and either mass- or weight-matched shipments to predict response to a common force after transport.",
+      "distractor_models": "Equal weight implies equal mass everywhere; mass changes on transport; vertical equilibrium forbids horizontal acceleration.",
+      "format": "One conceptual multiple-choice part; no numerical calculation."
+    },
+    {
+      "qid": "forcesPractice/forceSwitch",
+      "exam": 6,
+      "title": "Switching off a magnetic pull",
+      "source": "Worksheet 10 question 2(a) and 1(d): net force versus direction of motion",
+      "transfer_task": "Follow a changed force inventory through slowing, stopping and reversal, or continuing acceleration in the original direction.",
+      "distractor_models": "Zero velocity makes force disappear; motion must follow force instantly; initially balanced forces stay balanced after one is removed.",
+      "format": "One conceptual multiple-choice part; no numerical calculation."
+    }
+  ]
+}

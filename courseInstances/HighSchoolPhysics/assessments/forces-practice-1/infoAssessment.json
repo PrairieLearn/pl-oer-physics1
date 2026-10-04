@@ -1,0 +1,34 @@
+{
+  "uuid": "d463ce82-7055-4b36-a229-000000000001",
+  "type": "Exam",
+  "title": "Forces: Challenge Practice Exam 1",
+  "set": "Practice Exam",
+  "number": "5",
+  "multipleInstance": true,
+  "shuffleQuestions": true,
+  "allowRealTimeGrading": true,
+  "accessControl": [
+    {
+      "dateControl": { "release": { "date": "2026-10-04T00:00:01" } },
+      "afterComplete": { "questions": { "hidden": false }, "score": { "hidden": false } }
+    }
+  ],
+  "text": "<p>This practice exam has 10 problems, including two additional conceptual questions; some have two multiple-choice parts. Choose one answer for each part. Use g = 9.80 m/s² on Earth unless a different local gravity is stated. A calculator is available.</p><p>Each problem is worth up to 5 points, with retry values of 5, 4, then 3. You can start a new exam attempt for another randomized version. Worked solutions are available after finishing the attempt.</p>",
+  "zones": [
+    {
+      "questions": [
+        { "id": "forcesPractice/brakingShuttle", "autoPoints": [5, 4, 3] },
+        { "id": "forcesPractice/robotTraction", "autoPoints": [5, 4, 3] },
+        { "id": "forcesPractice/lunarCalibration", "autoPoints": [5, 4, 3] },
+        { "id": "forcesPractice/liftAssist", "autoPoints": [5, 4, 3] },
+        { "id": "forcesPractice/descentScale", "autoPoints": [5, 4, 3] },
+        { "id": "forcesPractice/stackedInstruments", "autoPoints": [5, 4, 3] },
+        { "id": "forcesPractice/cameraLauncher", "autoPoints": [5, 4, 3] },
+        { "id": "forcesPractice/netCatcher", "autoPoints": [5, 4, 3] },
+        { "id": "forcesPractice/motionEvidence", "autoPoints": [5, 2] },
+        { "id": "forcesPractice/collisionEvidence", "autoPoints": [5, 2] }
+      ]
+    }
+  ],
+  "tools": { "calculator": { "enabled": true } }
+}

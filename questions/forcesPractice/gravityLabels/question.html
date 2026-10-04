@@ -1,0 +1,22 @@
+<pl-question-panel>
+  {{{params.context}}}
+  <p><em>This is a conceptual question. No numerical calculation is needed.</em></p>
+</pl-question-panel>
+
+{{#params.parts}}
+<pl-question-panel>
+  <p><strong>{{number}}.</strong> {{{prompt}}}</p>
+</pl-question-panel>
+<pl-multiple-choice answers-name="{{name}}" weight="1">
+  {{#choices}}
+  <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+  {{/choices}}
+</pl-multiple-choice>
+{{/params.parts}}
+
+<pl-answer-panel>
+  <h3>Explanation</h3>
+  {{#params.parts}}
+  <p><strong>{{number}}.</strong> {{{solution}}}</p>
+  {{/params.parts}}
+</pl-answer-panel>

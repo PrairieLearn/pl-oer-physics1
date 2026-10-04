@@ -1,0 +1,34 @@
+{
+  "uuid": "d463ce82-7055-4b36-a229-000000000002",
+  "type": "Exam",
+  "title": "Forces: Challenge Practice Exam 2",
+  "set": "Practice Exam",
+  "number": "6",
+  "multipleInstance": true,
+  "shuffleQuestions": true,
+  "allowRealTimeGrading": true,
+  "accessControl": [
+    {
+      "dateControl": { "release": { "date": "2026-10-04T00:00:01" } },
+      "afterComplete": { "questions": { "hidden": false }, "score": { "hidden": false } }
+    }
+  ],
+  "text": "<p>This practice exam has 10 problems, including two additional conceptual questions; some have two multiple-choice parts. Choose one answer for each part. Use g = 9.80 m/s² on Earth unless a different local gravity is stated. A calculator is available.</p><p>Each problem is worth up to 5 points, with retry values of 5, 4, then 3. You can start a new exam attempt for another randomized version. Worked solutions are available after finishing the attempt.</p>",
+  "zones": [
+    {
+      "questions": [
+        { "id": "forcesPractice/corneringCarrier", "autoPoints": [5, 4, 3] },
+        { "id": "forcesPractice/springSeparation", "autoPoints": [5, 4, 3] },
+        { "id": "forcesPractice/counterweightHoist", "autoPoints": [5, 4, 3] },
+        { "id": "forcesPractice/sensorCalibration", "autoPoints": [5, 4, 3] },
+        { "id": "forcesPractice/coupledModules", "autoPoints": [5, 4, 3] },
+        { "id": "forcesPractice/liftStackSensor", "autoPoints": [5, 4, 3] },
+        { "id": "forcesPractice/opposedDrives", "autoPoints": [5, 4, 3] },
+        { "id": "forcesPractice/launcherDesign", "autoPoints": [5, 4, 3] },
+        { "id": "forcesPractice/gravityLabels", "autoPoints": [5, 2] },
+        { "id": "forcesPractice/forceSwitch", "autoPoints": [5, 2] }
+      ]
+    }
+  ],
+  "tools": { "calculator": { "enabled": true } }
+}
