@@ -1,5 +1,5 @@
 {
-  "scope": "Worksheets 10–12 and two Forces class-note pages, supplied 2026-10-04.",
+  "scope": "Worksheets 10–13 and two Forces class-note pages, supplied 2026-10-04 through 2026-10-05.",
   "sources": {
     "IMG_9428.HEIC": "Worksheet 10 conceptual questions",
     "IMG_9429.HEIC": "Worksheet 10 quantitative questions",
@@ -8,7 +8,9 @@
     "IMG_9432.HEIC": "Worksheet 12 page 2",
     "IMG_9427 2.HEIC": "Partial duplicate of Worksheet 12; no separate additional topic",
     "IMG_9433.HEIC": "Class notes: Newton laws, force inventories and third-law pairs",
-    "IMG_9434.HEIC": "Class notes: inertia, turning, gravitational reaction and continued motion"
+    "IMG_9434.HEIC": "Class notes: inertia, turning, gravitational reaction and continued motion",
+    "IMG_9435.HEIC": "Worksheet 13 page 1: force review, floating objects and accelerating elevators",
+    "IMG_9436.HEIC": "Worksheet 13 page 2: bounce, friction, buoyancy with a spring scale and loss of contact"
   },
   "boundaries": "No friction-coefficient calculations, inclined planes, torque, pulley constraints, Hooke's law, momentum or work–energy methods are required. Spring force is supplied at one instant. Handwritten answers are reference material, not assumed correct.",
   "questions": [
@@ -175,6 +177,40 @@
       "transfer_task": "Follow a changed force inventory through slowing, stopping and reversal, or continuing acceleration in the original direction.",
       "distractor_models": "Zero velocity makes force disappear; motion must follow force instantly; initially balanced forces stay balanced after one is removed.",
       "format": "One conceptual multiple-choice part; no numerical calculation."
+    },
+    {
+      "qid": "forcesPractice/buoyantElevatorFloat",
+      "exam": 5,
+      "title": "A floating sample in an accelerating elevator",
+      "source": "Worksheet 13 questions 4–5: floating block in an accelerating elevator",
+      "transfer_task": "Determine the buoyant force from the floating sample's acceleration, then reason about why the submerged fraction remains unchanged.",
+      "distractor_models": "Assuming equilibrium in an accelerating frame; reversing the acceleration sign; reversing buoyancy; assuming acceleration eliminates floating."
+    },
+    {
+      "qid": "forcesPractice/suspendedPanelPairs",
+      "exam": 5,
+      "title": "Forces and partners on a suspended panel",
+      "source": "Worksheet 13 question 3 and the starred class-note quiz question on force inventories and reaction partners",
+      "transfer_task": "Choose one target object, list only forces acting on it, then obtain each third-law partner by reversing the two interacting object names.",
+      "distractor_models": "Omitting a carried load; placing another object's weight on the target diagram; pairing balancing forces; putting reaction forces on the wrong diagram.",
+      "format": "Two conceptual multiple-choice parts; no numerical calculation."
+    },
+    {
+      "qid": "forcesPractice/submergedScaleRig",
+      "exam": 6,
+      "title": "A submerged artifact on a scale",
+      "source": "Worksheet 13 question 9: submerged block, buoyancy, spring scale and elevator acceleration",
+      "transfer_task": "Build the signed force equation from two upward forces and one downward force, then infer the spring-scale reading in either acceleration direction.",
+      "distractor_models": "Assuming equilibrium because the object is fixed in the elevator; reversing the acceleration sign; treating buoyancy as downward."
+    },
+    {
+      "qid": "forcesPractice/platformForcePairs",
+      "exam": 6,
+      "title": "Balancing forces versus reaction partners",
+      "source": "The starred class-note quiz question and Worksheet 13 question 3: forces on one object versus equal-and-opposite partners",
+      "transfer_task": "Use acceleration—not velocity—to compare forces on a supported case, then identify each interaction's partner on a different object.",
+      "distractor_models": "Assuming shared motion implies balanced forces; using velocity to infer force; treating support and weight as a third-law pair; crossing interaction partners.",
+      "format": "Two conceptual multiple-choice parts; no numerical calculation."
     }
   ]
 }

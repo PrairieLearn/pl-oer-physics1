@@ -13,7 +13,7 @@
       "afterComplete": { "questions": { "hidden": false }, "score": { "hidden": false } }
     }
   ],
-  "text": "<p>This practice exam has 10 problems, including two additional conceptual questions; some have two multiple-choice parts. Choose one answer for each part. Use g = 9.80 m/s² on Earth unless a different local gravity is stated. A calculator is available.</p><p>Each problem is worth up to 5 points, with retry values of 5, 4, then 3. You can start a new exam attempt for another randomized version. Worked solutions are available after finishing the attempt.</p>",
+  "text": "<p>This practice exam has 12 problems, including conceptual questions; some have two multiple-choice parts. Choose one answer for each part. Use g = 9.80 m/s² on Earth unless a different local gravity is stated. A calculator is available.</p><p>You can start a new exam attempt for another randomized version. Worked solutions are available after finishing the attempt.</p>",
   "zones": [
     {
       "questions": [
@@ -26,7 +26,9 @@
         { "id": "forcesPractice/cameraLauncher", "autoPoints": [5, 4, 3] },
         { "id": "forcesPractice/netCatcher", "autoPoints": [5, 4, 3] },
         { "id": "forcesPractice/motionEvidence", "autoPoints": [5, 2] },
-        { "id": "forcesPractice/collisionEvidence", "autoPoints": [5, 2] }
+        { "id": "forcesPractice/collisionEvidence", "autoPoints": [5, 2] },
+        { "id": "forcesPractice/buoyantElevatorFloat", "autoPoints": [5, 4, 3] },
+        { "id": "forcesPractice/suspendedPanelPairs", "autoPoints": [5, 2] }
       ]
     }
   ],

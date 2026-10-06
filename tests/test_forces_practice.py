@@ -109,7 +109,14 @@ def expected(qid, x):
         release_v2 = 2*G*x["free_height"]
         a = release_v2/(2*x["stroke"])
         return {"actuator_force": [x["mass"]*a + x["mass"]*G]}
-    if qid in {"corneringCarrier", "motionEvidence", "collisionEvidence", "gravityLabels", "forceSwitch"}:
+    if qid == "buoyantElevatorFloat":
+        signed_a = x["acceleration"] if x["direction"] == "upward" else -x["acceleration"]
+        return {"forces": [x["mass"]*(G+signed_a), x["mass"]*G]}
+    if qid == "submergedScaleRig":
+        signed_a = x["acceleration"] if x["direction"] == "upward" else -x["acceleration"]
+        return {"equation": [x["mass"]*(G+signed_a)-x["buoyant_force"]]}
+    if qid in {"corneringCarrier", "motionEvidence", "collisionEvidence", "gravityLabels", "forceSwitch",
+               "suspendedPanelPairs", "platformForcePairs"}:
         return {}
     raise AssertionError("Missing independent oracle: "+qid)
 
@@ -151,6 +158,7 @@ class ForcesPracticeTests(unittest.TestCase):
                                 self.assertEqual(len(matching), 1, "Physically equivalent numeric options")
                     self.check_directions(qid, p)
                     self.check_conceptual_models(qid, p)
+                    self.check_teacher_style_force_pairs(qid, p)
                     rendered = chevron.render(template, data)
                     self.assertNotIn("{{", rendered)
                     rendered_variants.add(rendered)
@@ -231,6 +239,12 @@ class ForcesPracticeTests(unittest.TestCase):
             self.assertIn("right", answer["accelerations"].split(";")[1])
         if qid == "corneringCarrier":
             self.assertIn("straight path toward "+p["givens"]["original"], answer["trajectory"])
+        if qid == "buoyantElevatorFloat":
+            self.assertIn("Water pushes upward", answer["forces"])
+            self.assertIn("Earth pulls downward", answer["forces"])
+            self.assertEqual(answer["submersion"], "The same fraction is submerged.")
+        if qid == "submergedScaleRig":
+            self.assertIn("R_s + F_b − mg = ma", answer["equation"])
 
 
     def check_conceptual_models(self, qid, p):
@@ -279,6 +293,30 @@ class ForcesPracticeTests(unittest.TestCase):
         for choice in choices:
             self.assertEqual(choice["correct"]=="true", choice["model"]==correct_model)
 
+    def check_teacher_style_force_pairs(self, qid, p):
+        if qid not in {"suspendedPanelPairs", "platformForcePairs"}:
+            return
+        answer = {part["name"]: next(choice["text"] for choice in part["choices"]
+                                     if choice["correct"] == "true")
+                  for part in p["parts"]}
+        if qid == "suspendedPanelPairs":
+            x = p["givens"]
+            inventory = answer["inventory"]
+            self.assertIn(f"{x['support']} pulls the panel upward", inventory)
+            self.assertIn("Earth pulls the panel downward", inventory)
+            self.assertIn(f"{x['device']} pulls the panel downward", inventory)
+            partners = answer["partners"]
+            self.assertIn(f"Panel on {x['support']} pairs with {x['support']} on panel", partners)
+            self.assertIn("panel on Earth pairs with Earth on panel", partners)
+            self.assertIn(f"panel on {x['device']} pairs with {x['device']} on panel", partners)
+        else:
+            x = p["givens"]
+            relation = "greater than" if x["acceleration"] == "upward" else "less than"
+            self.assertIn(relation, answer["comparison"])
+            self.assertIn("net force is "+x["acceleration"], answer["comparison"])
+            self.assertIn(f"partner of {x['support']} on case is case on {x['support']}", answer["partners"])
+            self.assertIn("partner of Earth on case is case on Earth", answer["partners"])
+
     def test_schemas_assessment_membership_and_identity(self):
         question_schema = json.loads((PL/"src/schemas/schemas/infoQuestion.json").read_text())
         assessment_schema = json.loads((PL/"src/schemas/schemas/infoAssessment.json").read_text())
@@ -292,18 +330,25 @@ class ForcesPracticeTests(unittest.TestCase):
             self.assertTrue(assessment["multipleInstance"])
             self.assertTrue(assessment["allowRealTimeGrading"])
             questions = [q for z in assessment["zones"] for q in z["questions"]]
-            self.assertEqual(len(questions), 10)
+            self.assertEqual(len(questions), 12)
             for question in questions:
                 self.assertEqual(set(question), {"id", "autoPoints"})  # No pools/alternatives.
-                self.assertEqual(question["autoPoints"], [5, 4, 3])
+                conceptual_ids = {
+                    "forcesPractice/motionEvidence", "forcesPractice/collisionEvidence",
+                    "forcesPractice/gravityLabels", "forcesPractice/forceSwitch",
+                    "forcesPractice/suspendedPanelPairs", "forcesPractice/platformForcePairs",
+                }
+                expected_points = [5, 2] if question["id"] in conceptual_ids else [5, 4, 3]
+                self.assertEqual(question["autoPoints"], expected_points)
                 all_ids.append(question["id"])
                 metadata = json.loads((ROOT/"questions"/question["id"]/"info.json").read_text())
                 jsonschema.validate(metadata, question_schema)
                 self.assertEqual(metadata["topic"], "Forces")
                 uuids.append(metadata["uuid"])
-        self.assertEqual(len(all_ids), 20)
+        self.assertEqual(len(all_ids), 24)
         conceptual = {"forcesPractice/motionEvidence", "forcesPractice/collisionEvidence",
-                      "forcesPractice/gravityLabels", "forcesPractice/forceSwitch"}
+                      "forcesPractice/gravityLabels", "forcesPractice/forceSwitch",
+                      "forcesPractice/suspendedPanelPairs", "forcesPractice/platformForcePairs"}
         self.assertTrue(conceptual.issubset(set(all_ids)))
         source_map = json.loads((ROOT/"tests/forces_source_map.json").read_text())
         self.assertEqual({q["qid"] for q in source_map["questions"]}, set(all_ids))
