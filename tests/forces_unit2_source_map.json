@@ -1,0 +1,84 @@
+{
+  "scope": "Five supplied photographs: Worksheets 14, 15, 16 and two handwritten force-note pages (October 2026).",
+  "boundaries": "Frictionless translation, ideal ropes and fixed pulleys. No friction coefficients, torque or energy methods. Notes on tension and normal forces are interpreted as forces on the chosen object. Worksheet 16 #4 is interpreted as greatest pull that still maintains contact; handwritten work is not an authoritative key.",
+  "questions": [
+    {
+      "qid": "forcesUnit2/liftRatio",
+      "title": "Two cable sensors in a moving lift",
+      "source": "Worksheet 14 #1",
+      "transfer_task": "Infer an unknown mass from two sensors; distinguish downward motion from upward acceleration."
+    },
+    {
+      "qid": "forcesUnit2/rampRelease",
+      "title": "A ramp experiment before and after release",
+      "source": "Worksheet 14 #2; Worksheet 16 #1; both note pages",
+      "transfer_task": "Infer the incline angle from a holding-force ratio, find an actuator force for uphill acceleration, then change the force inventory at release and reason at the turning point."
+    },
+    {
+      "qid": "forcesUnit2/rampClamp",
+      "title": "A clamp changes a ramp\u2019s contact force",
+      "source": "Worksheet 14 #3; normal-force and component notes",
+      "transfer_task": "Distinguish perpendicular force changes from parallel acceleration."
+    },
+    {
+      "qid": "forcesUnit2/ropeGauge",
+      "title": "Replacing one puller with a fixed anchor",
+      "source": "Worksheet 14 #4 and #6; tension notes",
+      "transfer_task": "Use a cut through a rope to predict a sensor reading and an anchor reaction."
+    },
+    {
+      "qid": "forcesUnit2/pulleyMount",
+      "title": "A cable redirects a load",
+      "source": "Worksheet 14 #5",
+      "transfer_task": "Compare mount loads for two rope directions, rather than adding tension magnitudes."
+    },
+    {
+      "qid": "forcesUnit2/atwoodInverse",
+      "title": "Inferring a hidden counterweight",
+      "source": "Worksheet 15 #1; Atwood notes",
+      "transfer_task": "Infer mass from observed acceleration; distinguish rope tension from each weight."
+    },
+    {
+      "qid": "forcesUnit2/angledRating",
+      "title": "Choosing a cable angle under a tension limit",
+      "source": "Worksheet 15 #2",
+      "transfer_task": "Infer minimum angle from a cable rating and determine the force in the horizontal tie."
+    },
+    {
+      "qid": "forcesUnit2/twoCableInference",
+      "title": "Reconstructing a suspended load",
+      "source": "Worksheet 15 #4; two-cable notes",
+      "transfer_task": "Recover total weight and compare unequal tensions from a measured single-cable reading."
+    },
+    {
+      "qid": "forcesUnit2/wallAngle",
+      "title": "Holding a specimen against a smooth wall",
+      "source": "Worksheet 15 #3; normal-force notes",
+      "transfer_task": "Predict how changing the applied-force angle changes both force and wall reaction."
+    },
+    {
+      "qid": "forcesUnit2/vectorCorrection",
+      "title": "Correcting a steering force",
+      "source": "Worksheet 16 #2; component notes",
+      "transfer_task": "Create a specified nonzero resultant, then compare with the force needed for equilibrium."
+    },
+    {
+      "qid": "forcesUnit2/contactLimit",
+      "title": "Reading a contact sensor during an angled pull",
+      "source": "Worksheet 16 #3\u20134",
+      "transfer_task": "Infer a pull from a normal-force reading; predict contact threshold and its mass dependence."
+    },
+    {
+      "qid": "forcesUnit2/hangingAccelerometer",
+      "title": "A hanging sensor in an accelerating cabin",
+      "source": "Class notes: hanging object in accelerating vehicle; tension components",
+      "transfer_task": "Infer acceleration and cable tension from a deflection measured relative to vertical."
+    },
+    {
+      "qid": "forcesUnit2/turningCord",
+      "title": "A guided puck and a released cord",
+      "source": "Second note page: turning-path sketch and inward resultant",
+      "transfer_task": "Separate instantaneous velocity from inward acceleration, then remove the constraint."
+    }
+  ]
+}

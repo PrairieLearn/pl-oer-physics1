@@ -1,0 +1,143 @@
+{
+  "uuid": "48f2dfa9-522d-483b-9f03-f2fafaf11a3f",
+  "type": "Exam",
+  "title": "Forces Unit 2: Transfer Practice Quiz",
+  "set": "Practice Exam",
+  "number": "7",
+  "multipleInstance": true,
+  "shuffleQuestions": true,
+  "allowRealTimeGrading": true,
+  "accessControl": [
+    {
+      "dateControl": {
+        "release": {
+          "date": "2026-11-02T00:00:01"
+        }
+      },
+      "afterComplete": {
+        "questions": {
+          "hidden": false
+        },
+        "score": {
+          "hidden": false
+        }
+      }
+    }
+  ],
+  "text": "<p>One practice quiz covering Worksheets 14\u201316 and both supplied Forces note pages. There are 13 scenarios, with 27 multiple-choice parts in total. Choose one answer per part. Use g = 9.80 m/s\u00b2 and degree mode. Ropes are light and pulleys ideal wherever stated. Keep full precision until selecting an answer.</p><p>Start another attempt for a randomized version. Worked solutions are available after finishing.</p>",
+  "zones": [
+    {
+      "questions": [
+        {
+          "id": "forcesUnit2/liftRatio",
+          "autoPoints": [
+            5,
+            4,
+            3
+          ]
+        },
+        {
+          "id": "forcesUnit2/rampRelease",
+          "autoPoints": [
+            5,
+            4,
+            3
+          ]
+        },
+        {
+          "id": "forcesUnit2/rampClamp",
+          "autoPoints": [
+            5,
+            4,
+            3
+          ]
+        },
+        {
+          "id": "forcesUnit2/ropeGauge",
+          "autoPoints": [
+            5,
+            4,
+            3
+          ]
+        },
+        {
+          "id": "forcesUnit2/pulleyMount",
+          "autoPoints": [
+            5,
+            4,
+            3
+          ]
+        },
+        {
+          "id": "forcesUnit2/atwoodInverse",
+          "autoPoints": [
+            5,
+            4,
+            3
+          ]
+        },
+        {
+          "id": "forcesUnit2/angledRating",
+          "autoPoints": [
+            5,
+            4,
+            3
+          ]
+        },
+        {
+          "id": "forcesUnit2/twoCableInference",
+          "autoPoints": [
+            5,
+            4,
+            3
+          ]
+        },
+        {
+          "id": "forcesUnit2/wallAngle",
+          "autoPoints": [
+            5,
+            4,
+            3
+          ]
+        },
+        {
+          "id": "forcesUnit2/vectorCorrection",
+          "autoPoints": [
+            5,
+            4,
+            3
+          ]
+        },
+        {
+          "id": "forcesUnit2/contactLimit",
+          "autoPoints": [
+            5,
+            4,
+            3
+          ]
+        },
+        {
+          "id": "forcesUnit2/hangingAccelerometer",
+          "autoPoints": [
+            5,
+            4,
+            3
+          ]
+        },
+        {
+          "id": "forcesUnit2/turningCord",
+          "autoPoints": [
+            5,
+            4,
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "tools": {
+    "calculator": {
+      "enabled": true
+    }
+  }
+}

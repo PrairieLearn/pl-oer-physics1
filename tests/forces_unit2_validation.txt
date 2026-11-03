@@ -1,0 +1,8 @@
+Forces Unit 2: Transfer Practice Quiz
+13 scenarios, 27 multiple-choice parts; assessment number 7.
+Sources: Worksheets 14–16 and both supplied handwritten note pages.
+Exhaustive finite-domain verification: 95 scenario variants, 196 generated parts, 784 native option-grading checks.
+All independent numerical solution checks, formatted-choice uniqueness checks, native MC prepare/parse/grade/render checks, course schemas, UUID/QID checks, source map, repeatability and visible-variation checks passed.
+Verification uses the local PrairieLearn source at /Users/mariana/GitRepo/PrairieLearn/apps/prairielearn.
+No live server sync or student-page visual inspection: local PrairieLearn is stopped.
+Portable HTML quiz contains the same variant bank with shuffled choices and solutions revealed on completion; browser visual verification was unavailable.

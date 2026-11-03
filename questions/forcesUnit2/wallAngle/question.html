@@ -1,0 +1,22 @@
+<pl-question-panel>
+  {{{params.context}}}
+  <p><em>Use g = 9.80 m/s² on Earth. Keep unrounded values during calculations; numerical answer choices are rounded to two decimal places.</em></p>
+</pl-question-panel>
+
+{{#params.parts}}
+<pl-question-panel>
+  <p><strong>{{number}}.</strong> {{{prompt}}}</p>
+</pl-question-panel>
+<pl-multiple-choice answers-name="{{name}}" weight="1">
+  {{#choices}}
+  <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+  {{/choices}}
+</pl-multiple-choice>
+{{/params.parts}}
+
+<pl-answer-panel>
+  <h3>Worked solution</h3>
+  {{#params.parts}}
+  <p><strong>{{number}}.</strong> {{{solution}}}</p>
+  {{/params.parts}}
+</pl-answer-panel>
